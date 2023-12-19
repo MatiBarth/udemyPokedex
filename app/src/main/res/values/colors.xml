@@ -11,4 +11,6 @@
     <color name="attack_background">#8F8101</color>
     <color name="defense_background">#AFCDF3</color>
     <color name="speed_background">#F3DB03</color>
+    <color name="text_gray">#A5A3A3</color>
+    <color name="text_black">#140C0B</color>
 </resources>

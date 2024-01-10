@@ -1,5 +1,6 @@
 package com.example.pokedex
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -43,6 +44,7 @@ class PokemonAdapter : ListAdapter<Pokemon, PokemonAdapter.ViewHolder>(DiffCallb
             idText.text = pokemon.id.toString()
             nameText.text = pokemon.name
 
+
             val imageId = when (pokemon.type) {
                 Pokemon.PokemonType.GRASS -> R.drawable.grass_icon
                 Pokemon.PokemonType.ELECTRIC -> R.drawable.electric_icon
@@ -58,8 +60,6 @@ class PokemonAdapter : ListAdapter<Pokemon, PokemonAdapter.ViewHolder>(DiffCallb
                     onItemClickListener(pokemon)
                 }
             }
-
         }
-
     }
 }

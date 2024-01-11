@@ -46,6 +46,6 @@ class DetailFragment : Fragment() {
         defenseText.text = "${prefix} ${pokemon.defense.toString()}"
         prefix = context?.getString(R.string.speed_prefix)
         speedText.text = "${prefix} ${pokemon.speed.toString()}"
-        Glide.with(this).load("https://w7.pngwing.com/pngs/589/55/png-transparent-pokemon-x-and-y-pancham-pokemon-universe-evolution-sombra-mammal-cat-like-mammal-carnivoran.png").into(imageView);
+        Glide.with(this).load("${pokemon.imageUrl.toString()}").into(imageView);
     }
 }

@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.example.pokedex.databinding.FragmentDetailBinding
 
 class DetailFragment : Fragment() {
@@ -45,5 +46,6 @@ class DetailFragment : Fragment() {
         defenseText.text = "${prefix} ${pokemon.defense.toString()}"
         prefix = context?.getString(R.string.speed_prefix)
         speedText.text = "${prefix} ${pokemon.speed.toString()}"
+        Glide.with(this).load("https://w7.pngwing.com/pngs/589/55/png-transparent-pokemon-x-and-y-pancham-pokemon-universe-evolution-sombra-mammal-cat-like-mammal-carnivoran.png").into(imageView);
     }
 }

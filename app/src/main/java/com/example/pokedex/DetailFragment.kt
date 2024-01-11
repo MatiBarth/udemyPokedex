@@ -46,6 +46,6 @@ class DetailFragment : Fragment() {
         defenseText.text = "${prefix} ${pokemon.defense.toString()}"
         prefix = context?.getString(R.string.speed_prefix)
         speedText.text = "${prefix} ${pokemon.speed.toString()}"
-        Glide.with(this).load("${pokemon.imageUrl.toString()}").into(imageView);
+        Glide.with(this).load("${pokemon.imageUrl.toString()}").into(imageView)
     }
 }

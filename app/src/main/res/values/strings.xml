@@ -2,4 +2,8 @@
     <string name="app_name">Pokedex</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hp_prefix">"HP: "</string>
+    <string name="attack_prefix">ATTACK:</string>
+    <string name="defense_prefix">DEFENSE:</string>
+    <string name="speed_prefix">SPEED:</string>
 </resources>
